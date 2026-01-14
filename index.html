@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Reports</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .report-list {
+            list-style: none;
+            padding: 0;
+        }
+        .report-list li {
+            margin: 15px 0;
+        }
+        .report-list a {
+            display: block;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+        .report-list a:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        .report-list .icon {
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Reports</h1>
+        <ul class="report-list">
+            <li>
+                <a href="weekly_summary.html">
+                    <span class="icon">📊</span> Weekly Summary
+                    <br><small style="color: #7f8c8d;">AI-generated overview of grades and assignments</small>
+                </a>
+            </li>
+            <li>
+                <a href="missing_report.html">
+                    <span class="icon">⚠️</span> Missing Assignments
+                    <br><small style="color: #7f8c8d;">Assignments needing attention</small>
+                </a>
+            </li>
+            <li>
+                <a href="grades_percentage.html">
+                    <span class="icon">📈</span> Grade Trends
+                    <br><small style="color: #7f8c8d;">Interactive chart of grade history</small>
+                </a>
+            </li>
+            <li>
+                <a href="upcoming_assignments.html">
+                    <span class="icon">📅</span> Upcoming Assignments
+                    <br><small style="color: #7f8c8d;">What's due soon</small>
+                </a>
+            </li>
+        </ul>
+        <p class="footer">Updated automatically via local scheduler</p>
+    </div>
+</body>
+</html>
